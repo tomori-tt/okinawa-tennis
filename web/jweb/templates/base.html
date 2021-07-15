@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="format-detection" content="telephone=no">
+        {% block title %}
+        <title>友テニサークル</title>
+        <meta name="description" content="私たちは沖縄県那覇市を拠点に活動するテニスサークルです。
+        久しぶりに体を動かしたい！、テニスをやってみたい、大会に出るために練習がしたい方たちが日々テニスコートで汗を流しています。
+        当サークルは２つに分かれておりレベルに応じて参加できるので未経験者の方でも経験者の方でも大歓迎です！！">
+        {% endblock %}
+        <link rel="stylesheet" href='{% static "stylesheet.css" %}'>
+    </head>
+    <body>
+        <main>
+            <div id="pagebody">
+                <header>
+                    <div class="name"><h1>友テニサークルの活動日記</h1></div>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="/">ホーム</a></li>
+                            <li><a href="/sukeju-ru">スケジュール</a></li>
+                            <li><a href="/tournament">大会関連</a></li>
+                            <li><a href="/Contact">お問い合わせ</a></li>
+                        </ul>
+                    </nav>
+                </header>
+        {% block body %}
+
+        {% endblock %}
+        </main>
+        <footer>
+            <div class="footername">友テニサークルの活動日記</div>
+            <nav class="footergaiyou">
+                <ul>
+                    <li><a href="/">ホーム</a></li>
+                    <li><a href="/sukeju-ru">スケジュール</a></li>
+                    <li><a href="/tournament">大会関連</a></li>
+                    <li><a href="/Contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <div class="Copyright"><address>Copyright (c) HTMQ All Resrved.</address></div>
+        </footer>        
+    </body>
+</html>

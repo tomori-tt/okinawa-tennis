@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+
+{% block tag %}
+<h2>
+    好きな子名簿
+</h2>
+<h3>{{number}}人です</h3> 
+ <ul>
+ {% for named in name %}
+ <li>
+    {{ named }}
+ </li>
+    {% empty %}
+    <li>
+        好きな子いません
+    </li>
+    {% endfor %}
+ </ul>
+{% endblock %}

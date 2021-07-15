@@ -1,0 +1,58 @@
+ul{
+    list-style:none;
+  }
+  .menu a {
+    color:white;
+  }
+  body{
+    text-align: center;
+    font-family:serif;
+    margin: 0px;
+    padding:0px;
+  }
+  ul{
+    list-style: none;
+  }
+  .name{
+    font-size:30px;
+    padding:150px 150px 100px 150px;  
+  }
+  .menu{
+    background-color:black;
+    color:white;
+  }
+  .menu li{
+    display: inline-block;
+    padding:10px 30px;
+  }
+  .goaisatu{
+    text-align: center;
+  }
+  .goaisatu p{
+    text-align:left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 37em
+  }
+  .komidasi{
+    clear: both;
+  }
+  footer{
+    background: linear-gradient(to bottom,black,#fff)
+  
+  }
+  
+  .footername{
+    height: 50px;
+    float:left;
+    color:#242424;
+  }
+  .footergaiyou{
+    float:right;
+  }
+  .footergaiyou a{
+    color:white;
+  }
+  .Copyright{
+    clear:both;
+  }

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static%}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'stylesheet.css' %}">
+    </head>
+    <body>
+        <div class="nav">
+            <h1>ともたつ日記</h1>
+            <p>今までの活動記録</p>
+        </div>
+        {% include "atume.html" %}
+        {% block tag %}
+
+        {% endblock %}
+        {% now "y年m月d日　h時i分" %}
+    </body>
+</html>
